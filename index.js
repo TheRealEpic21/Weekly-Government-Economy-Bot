@@ -25,7 +25,7 @@ client.on('interactionCreate', async interaction => {
 		await interaction.reply(`Your tag: ${interaction.user.tag}\nYour id: ${interaction.user.id}`);
 	}
 	else if (commandName === 'say-the-truth') {
-		await interaction.reply(`'@' + ${interaction.user.id} + ' is a fucking idiot'`);
+		await interaction.reply(`<@${interaction.user.id}> is a fucking idiot.`);
 	}
 });
 
